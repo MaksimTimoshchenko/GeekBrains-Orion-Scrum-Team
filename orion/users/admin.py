@@ -15,14 +15,13 @@ class UserAdminConfig(UserAdmin):
                            'password',
                            'avatar',
                            'bio',
-                           'rating',
                            'is_superuser', )}),
         ('Permissions', {'fields': ('is_staff', 'is_active', 'groups')}),
     )
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('username', 'email', 'password1', 'password2', 'rating', 'is_active', 'is_staff'),
+            'fields': ('email', 'username', 'password1', 'password2', 'is_active', 'is_staff'),
         },
         ),
     )
